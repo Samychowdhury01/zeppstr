@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gradient-bg{
+    background: url('./assets/home/gradient-bg.png');
+   background-repeat: no-repeat;
+}
