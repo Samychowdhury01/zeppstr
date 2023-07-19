@@ -1,33 +1,34 @@
 import React from "react";
+import ActiveLink from "./ActiveLink";
+import logo from '../../assets/home/logo.png'
+import Button from "../Button/Button";
 
 const Navbar = () => {
   const navItems = (
+    //                    
     <>
       <li>
-        <a>Item 1</a>
-      </li>
-      <li tabIndex={0}>
-        <details>
-          <summary>Parent</summary>
-          <ul className="p-2">
-            <li>
-              <a>Submenu 1</a>
-            </li>
-            <li>
-              <a>Submenu 2</a>
-            </li>
-          </ul>
-        </details>
+        <ActiveLink to="/">Services</ActiveLink>
       </li>
       <li>
-        <a>Item 3</a>
+        <ActiveLink to="/consult">Packages</ActiveLink>
       </li>
+      <li>
+        <ActiveLink to="/training">Who We Are</ActiveLink>
+      </li>
+      <li>
+        <ActiveLink to="/discover">Our Protfolio </ActiveLink>
+      </li>
+      <li>
+        <ActiveLink to="/contact">About Us</ActiveLink>
+      </li>
+  
     </>
   );
   return (
     <>
-      <div className="navbar bg-base-100">
-        <div className="navbar-start">
+      <div className="navbar bg-base-100 fixed bg-transparent w-8/12">
+        <div className="navbar-start md:w-1/3">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
               <svg
@@ -50,15 +51,25 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               {navItems}
+              <div>
+          <a className=""> <Button>
+              contact
+            </Button></a>
+        </div>
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+          <a className="normal-case text-xl">
+            <img src={logo} alt="logo" />
+          </a>
         </div>
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">{navItems}</ul>
-        </div>
-        <div className="navbar-end">
-          <a className="btn">Button</a>
+        <div className="navbar-end w-full hidden lg:flex">
+          <ul className="menu menu-horizontal px-1 flex items-center">{navItems} <div>
+          <a className="">
+            <Button>
+              contact
+            </Button>
+          </a>
+        </div></ul>
         </div>
       </div>
     </>

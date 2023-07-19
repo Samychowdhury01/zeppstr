@@ -9,6 +9,9 @@ export default {
       textColor:{
         primary: '#E71D36',
         secondary: '#2EC4B6'
+      },
+      backgroundColor: {
+        primary: '#E71D36',
       }
     },
   },
