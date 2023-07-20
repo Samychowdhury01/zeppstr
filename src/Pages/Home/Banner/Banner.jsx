@@ -2,6 +2,7 @@
 import React from "react";
 import Button from "../../../Components/Button/Button";
 import { useForm } from "react-hook-form";
+import { Link } from "react-scroll";
 
 const Banner = () => {
   const {
@@ -12,10 +13,10 @@ const Banner = () => {
   const onSubmit = (data) => console.log(data);
   //   console.log(errors);
   return (
-    <section className="gradient-bg p-8 md:p-28">
-      <div className="flex flex-col md:flex-row gap-4 md:gap-12">
+    <section className="banner-bg p-8 md:p-28 w-full">
+      <div className="flex md:justify-between lg:justify-around flex-col md:flex-row gap-4 md:gap-12">
         {/* text container */}
-        <div className="w-full md:w-[517px] space-y-4 md:space-y-6">
+        <div className="w-full md:w-[550px] space-y-4 md:space-y-6">
           <h1 className="uppercase text-2xl md:text-5xl font-bold">
             Best <span className="text-primary">SEO Services</span> Company in
             Bangalore
@@ -29,9 +30,9 @@ const Banner = () => {
           </p>
           <div>
             <Button>Talk to our Expert</Button>
-            <button className="btn btn-link text-primary text-xl font-medium">
+            <Link to="audit" smooth={true} className="btn btn-link text-primary text-xl font-medium">
               Free Website Audit
-            </button>
+            </Link>
           </div>
         </div>
 

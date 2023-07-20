@@ -3,6 +3,8 @@ import Banner from '../Banner/Banner';
 import BrandSection from '../BrandSection/BrandSection';
 import MapSection from '../MapSection/MapSection';
 import FeatureSection from '../FeatureSection/FeatureSection';
+import SeoAudit from '../SeoAudit/SeoAudit';
+import Ranking from '../Ranking/Ranking';
 
 const Home = () => {
     return (
@@ -10,6 +12,8 @@ const Home = () => {
             <Banner/>
             <BrandSection/>
             <FeatureSection/>
+            <SeoAudit/>
+            <Ranking/>
             <MapSection/>
         </div>
     );

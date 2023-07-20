@@ -1,0 +1,43 @@
+[
+    {
+      "name": "John Smith",
+      "position": "Marketing Manager",
+      "company_name": "ABC Inc.",
+      "image_url": "https://static.vecteezy.com/system/resources/previews/011/675/374/original/man-avatar-image-for-profile-png.png",
+      "company_image": "https://ww1.freelogovectors.net/wp-content/uploads/2018/07/makemytrip-logo.png",
+      "review": "Working with Zeppstr was a game-changer for our business. Their expertise in digital marketing strategies and their commitment to achieving results helped us boost our online presence and increase revenue significantly. I highly recommend their services!"
+    },
+    {
+      "name": "Emily Johnson",
+      "position": "Social Media Specialist",
+      "company_name": "XYZ Corp.",
+      "image_url": "https://static.vecteezy.com/system/resources/previews/011/675/374/original/man-avatar-image-for-profile-png.png",
+      "company_image": "https://ww1.freelogovectors.net/wp-content/uploads/2018/07/makemytrip-logo.png",
+      "review": "Zeppstr is an exceptional digital marketing agency! They understand the nuances of social media marketing and have provided us with innovative campaigns that drove engagement and conversions. Their team is creative, responsive, and truly a pleasure to work with."
+    },
+    {
+      "name": "Michael Williams",
+      "position": "CEO",
+      "company_name": "123 Industries",
+      "image_url": "https://static.vecteezy.com/system/resources/previews/011/675/374/original/man-avatar-image-for-profile-png.png",
+      "company_image": "https://ww1.freelogovectors.net/wp-content/uploads/2018/07/makemytrip-logo.png",
+      "review": "We hired Zeppstr to revamp our SEO strategy, and they exceeded our expectations. Their in-depth analysis and implementation of SEO best practices resulted in a significant increase in organic traffic and improved search rankings. Zeppstr's services are worth every penny!"
+    },
+    {
+      "name": "Sarah Adams",
+      "position": "E-commerce Manager",
+      "company_name": "TechGurus",
+      "image_url": "https://static.vecteezy.com/system/resources/previews/011/675/374/original/man-avatar-image-for-profile-png.png",
+      "company_image": "https://ww1.freelogovectors.net/wp-content/uploads/2018/07/makemytrip-logo.png",
+      "review": "Choosing Zeppstr for our e-commerce marketing was the best decision we made. Their team's expertise in Google Ads and conversion optimization helped us achieve higher ROI on our ad spend. The results speak for themselves, and we look forward to continuing our collaboration."
+    },
+    {
+      "name": "David Lee",
+      "position": "Content Strategist",
+      "company_name": "InnovateNow",
+      "image_url": "https://static.vecteezy.com/system/resources/previews/011/675/374/original/man-avatar-image-for-profile-png.png",
+      "company_image": "https://ww1.freelogovectors.net/wp-content/uploads/2018/07/makemytrip-logo.png",
+      "review": "I've worked with several marketing agencies, but Zeppstr stands out for their personalized approach and attention to detail. Their content marketing strategies have significantly improved our brand visibility and engagement. I wholeheartedly recommend Zeppstr to any business looking to elevate their digital presence."
+    }
+  ]
+  
