@@ -42,7 +42,7 @@ const Banner = () => {
               type="text"
               className="input input-bordered"
               placeholder="NAME"
-              {...register("name")}
+              {...register("name", { required: true})}
             />
             {errors.name && (
               <span className="text-red-500">this field is required</span>
@@ -74,7 +74,9 @@ const Banner = () => {
             {errors.otp && (
               <span className="text-red-500">this field is required</span>
             )}
-            <Button>contacts</Button>
+           <div className="text-center">
+             <Button>contacts</Button>
+           </div>
           </form>
         </div>
       </div>
