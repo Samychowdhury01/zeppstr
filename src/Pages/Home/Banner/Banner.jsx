@@ -13,7 +13,7 @@ const Banner = () => {
   const onSubmit = (data) => console.log(data);
   //   console.log(errors);
   return (
-    <section className="banner-bg p-8 md:p-28 w-full">
+    <section className="banner-bg p-8 md:p-28">
       <div className="flex md:justify-between lg:justify-around flex-col md:flex-row gap-4 md:gap-12">
         {/* text container */}
         <div className="w-full md:w-[550px] space-y-4 md:space-y-6">
