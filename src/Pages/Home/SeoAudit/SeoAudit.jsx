@@ -7,10 +7,17 @@ const SeoAudit = () => {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => {
+    window.my_modal_5.showModal()
+    console.log(data);
+  };
   //   console.log(errors);
+  const handleDetailsData = (event) =>{
+    event.preventDefault()
+    console.log('ok');
+  } 
   return (
-    <section id="audit" className='gradient-bg p-8 md:p-28 mb-16'>
+    <section id="audit" className="gradient-bg p-8 md:p-28 mb-16">
       <div className="text-center">
         <h1 className="text-5xl font-bold mb-8">Get a Free SEO Audit!</h1>
         <p className="text-lg mb-11">
@@ -21,7 +28,10 @@ const SeoAudit = () => {
         </p>
       </div>
       <div>
-        <form className="flex flex-col md:flex-row items-center justify-center gap-9" onSubmit={handleSubmit(onSubmit)}>
+        <form
+          className="flex flex-col md:flex-row items-center justify-center gap-9"
+          onSubmit={handleSubmit(onSubmit)}
+        >
           <input
             type="url"
             className="input input-bordered bg-white placeholder:text-black placeholder:font-medium py-5 rounded-[50px] shadow-xl w-[350px]"
@@ -47,6 +57,42 @@ const SeoAudit = () => {
           />
         </form>
       </div>
+      <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
+        <form method="dialog" className="modal-box" onSubmit={handleDetailsData}>
+          <h3 className="font-bold text-lg">Free SEO Audit</h3>
+          <p className="py-4">
+            Fill the form for a free SEO audit of your website
+          </p>
+          <div>
+            <div>
+            <label className="label">
+            <span className="label-text">Name</span>
+          </label>
+          <input type="text" placeholder="Name" className="input input-bordered w-full" />
+            <label className="label">
+            <span className="label-text">Email</span>
+          </label>
+          <input type="email" placeholder="Email" className="input input-bordered w-full" />
+            <label className="label">
+            <span className="label-text">Company Name</span>
+          </label>
+          <input type="text" placeholder="Company Name" className="input input-bordered w-full" />
+            <label className="label">
+            <span className="label-text">Website URL</span>
+          </label>
+          <input type="url" placeholder="Website URL" className="input input-bordered w-full" />
+            </div>
+            <input
+            type="submit"
+            className="bg-[#2EC4B6] text-white text-lg font-medium py-2 px-6 rounded-[50px] shadow-2xl shadow-[#2ec4b67a] mt-5"
+            value="submit"
+          />
+          </div>
+        </form>
+        <form method="dialog" className="modal-backdrop">
+    <button>close</button>
+  </form>
+      </dialog>
     </section>
   );
 };
