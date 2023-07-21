@@ -26,7 +26,7 @@ const Services = () => {
         </div>
         {/* services */}
         <div className="grid grid-cols-1 md:grid-cols-5 gap-4 text-black px-2 mt-5 md:-mt-36">
-          <div className="md:col-span-2 w-full card lg:card-s bg-yellow-500 shadow-xl rounded-none">
+        <div className="md:col-span-2 w-full card lg:card-side bg-yellow-500 shadow-xl rounded-none text-white">
             <div className="card-body mt-10">
               <h2 className="card-title">Global SEO</h2>
               <p>

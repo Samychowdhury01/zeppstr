@@ -24,7 +24,7 @@ const SeoAudit = () => {
         <form className="flex flex-col md:flex-row items-center justify-center gap-9" onSubmit={handleSubmit(onSubmit)}>
           <input
             type="url"
-            className="input input-bordered placeholder:text-black placeholder:font-medium py-5 rounded-[50px] shadow-xl w-[350px]"
+            className="input input-bordered bg-white placeholder:text-black placeholder:font-medium py-5 rounded-[50px] shadow-xl w-[350px]"
             placeholder="Enter Your Website URL.."
             {...register("url", { required: true })}
           />
@@ -33,7 +33,7 @@ const SeoAudit = () => {
           )}
           <input
             type="email"
-            className="input input-bordered placeholder:text-black placeholder:font-medium py-5 rounded-[50px] shadow-xl w-[350px]"
+            className="input input-bordered bg-white placeholder:text-black placeholder:font-medium py-5 rounded-[50px] shadow-xl w-[350px]"
             placeholder="Enter Your Email ID"
             {...register("email", { required: true, pattern: /^\S+@\S+$/i })}
           />

@@ -22,7 +22,7 @@ const BlogSection = () => {
         </p>
       </div>
       <div className="flex flex-col md:flex-row items-center gap-5">
-        <div className="card md:w-3/6 bg-base-100 shadow-xl">
+        <div className="card md:w-3/6 bg-white shadow-xl">
           <figure className="h-[300px]">
             <img
               src={image}
@@ -41,7 +41,7 @@ const BlogSection = () => {
           </div>
         </div>
         <div className="w-full">
-          <div className="card lg:card-side bg-base-100 shadow-xl mb-10">
+          <div className="card lg:card-side bg-white shadow-xl mb-10">
             <figure className="md:w-1/2">
               <img
                 src={image}
@@ -60,7 +60,7 @@ const BlogSection = () => {
           </Link></p>
             </div>
           </div>
-          <div className="card lg:card-side bg-base-100 shadow-xl mb-10">
+          <div className="card lg:card-side bg-white shadow-xl mb-10">
             <figure className="md:w-1/2">
               <img
                 src={image}
