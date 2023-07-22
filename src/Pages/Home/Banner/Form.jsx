@@ -11,19 +11,11 @@ const Form = () => {
         formState: { errors },
       } = useForm();
       const onSubmit = (data) => {console.log(data)
-        emailjs.sendForm('service_jbkgv4f', 'template_kpl4sgq', form.current, 'kKPC5njuLLi12Z8wy')
-        .then((result) => {
-           if(result.text === 'OK'){
-            Swal.fire(
-                'Submitted',
-                'You have successfully submitted your application.',
-                'success'
-              )
-           }
-        }, (error) => {
-            console.log(error.text);
-        });
-    
+        Swal.fire(
+          'Submitted',
+          'You have successfully submitted your application.',
+          'success'
+        )
     };
 
       
@@ -34,26 +26,35 @@ const Form = () => {
            onSubmit={handleSubmit(onSubmit)}>
             <input
               type="text"
-              className="input input-bordered bg-white"
+              className="input input-bordered bg-white placeholder:text-black"
               placeholder="NAME"
-              {...register("from_name", { required: true})}
+              {...register("name", { required: true})}
             />
             {errors.name && (
               <span className="text-red-500">this field is required</span>
             )}
             <input
               type="email"
-              className="input input-bordered bg-white"
+              className="input input-bordered bg-white placeholder:text-black"
               placeholder="EMAIL"
-              {...register("user_email", { required: true, pattern: /^\S+@\S+$/i })}
+              {...register("email", { required: true, pattern: /^\S+@\S+$/i })}
             />
             {errors.email && (
               <span className="text-red-500">this field is required</span>
             )}
 
             <input
+              type="text"
+              className="input input-bordered bg-white placeholder:text-black"
+              placeholder="Company Name"
+              {...register("company", { required: true })}
+            />
+            {errors.company && (
+              <span className="text-red-500">this field is required</span>
+            )}
+            <input
               type="url"
-              className="input input-bordered bg-white"
+              className="input input-bordered bg-white placeholder:text-black"
               placeholder="URL"
               {...register("url", { required: true })}
             />

@@ -7,7 +7,7 @@ const ActiveLink = ({ to, children }) => {
       to={to}
       className={({ isActive }) =>
         isActive
-          ? "border-b-2 border-[#E71D36] outline-none rounded-none font-bold"
+          ? "border-b-2 border-[#E71D36] outline-none rounded-none"
           : ""
       }
     >
