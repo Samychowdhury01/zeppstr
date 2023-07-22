@@ -3,15 +3,15 @@ import React from "react";
 import { BiPen } from "react-icons/bi";
 import { FaMagnifyingGlassChart } from "react-icons/fa6";
 import Button from "../../../Components/Button/Button";
-
 const FeatureSection = () => {
+ 
   return (
     <section className="mb-16 px-8 md:px-28">
       <div className="flex flex-col md:flex-row items-center gap-28">
         {/* text container */}
         <div className="space-y-[38px] text-black">
           <h2 className="text-3xl font-medium">
-            What do we offer you as an{" "}
+            What do we offer you as an
             <span className="text-primary">SEO Agency?</span>
           </h2>
           <p>
@@ -88,6 +88,7 @@ const FeatureSection = () => {
           </div>
         </div>
       </div>
+      {/*  */}
     </section>
   );
 };

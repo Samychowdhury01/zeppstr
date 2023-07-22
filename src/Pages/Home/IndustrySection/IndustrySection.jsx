@@ -5,7 +5,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 const IndustrySection = () => {
   return (
-    <section className="md:px-[84px] mb-16 p-2">
+    <section className="md:p-28 mb-16 p-8 text-black">
       <div className="md:w-2/3 mx-auto text-center mb-10">
         <h1 className="text-3xl md:text-5xl font-bold mb-4">Industries We Serve</h1>
         <p className="md:text-lg">

@@ -1,7 +1,18 @@
 import React from "react";
 import seo from "../../../assets/home/SEO.png";
+import Button from "../../../Components/Button/Button";
+import { Link } from "react-router-dom";
 
 const Services = () => {
+  const handleModal = (data) => {
+    window.my_modal_5.showModal();
+    console.log(data);
+  };
+  //   console.log(errors);
+  const handleDetailsData = (event) => {
+    event.preventDefault();
+    console.log("ok");
+  };
   return (
     <section className="mb-16">
       <div>
@@ -26,7 +37,7 @@ const Services = () => {
         </div>
         {/* services */}
         <div className="grid grid-cols-1 md:grid-cols-5 gap-4 text-black px-2 mt-5 md:-mt-36">
-        <div className="md:col-span-2 w-full card lg:card-side bg-yellow-500 shadow-xl rounded-none text-white">
+          <div className="md:col-span-2 w-full card lg:card-side bg-yellow-500 shadow-xl rounded-none text-white">
             <div className="card-body mt-10">
               <h2 className="card-title">Global SEO</h2>
               <p>
@@ -44,7 +55,7 @@ const Services = () => {
               />
             </figure>
           </div>
-          <div className="card w-full bg-[#E9D1D7] shadow-xl rounded-none pt-10">
+          <div className="card w-full bg-[#E9D1D7] shadow-xl text-black rounded-none pt-10">
             <figure>
               <img src={seo} alt="seo" />
             </figure>
@@ -57,7 +68,7 @@ const Services = () => {
               <div className="card-actions justify-end"></div>
             </div>
           </div>
-          <div className="card w-full bg-[#6EDCF3] shadow-xl rounded-none pt-10">
+          <div className="card w-full bg-[#6EDCF3] shadow-xl text-black rounded-none pt-10">
             <figure>
               <img src={seo} alt="seo" />
             </figure>
@@ -70,7 +81,7 @@ const Services = () => {
               <div className="card-actions justify-end"></div>
             </div>
           </div>
-          <div className="card w-full bg-[#E6BAA0] shadow-xl rounded-none pt-10">
+          <div className="card w-full bg-[#E6BAA0] shadow-xl text-black rounded-none pt-10">
             <figure>
               <img src={seo} alt="seo" />
             </figure>
@@ -143,10 +154,68 @@ const Services = () => {
           </div>
         </div>
         <div className="mt-16 flex flex-col md:flex-row items-center justify-center gap-5">
-          <button className="btn btn-primary btn-outline rounded-3xl shadow-xl">Request a free quote</button>
-          <button className="btn btn-primary rounded-3xl shadow-xl shadow-[#849fe9ab]">Talk to our Expert</button>
+          <button className="btn btn-error btn-outline rounded-3xl shadow-xl">
+            Request a free quote
+          </button>
+          <Link onClick={handleModal}>
+            <Button className="btn btn-primary rounded-3xl shadow-xl shadow-[#849fe9ab]">
+              Talk to our Expert
+            </Button>
+          </Link>
         </div>
       </div>
+      <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
+        <form
+          method="dialog"
+          className="modal-box"
+          onSubmit={handleDetailsData}
+        >
+          <h3 className="font-bold text-lg">Free SEO Audit</h3>
+          <p className="py-4">
+            Fill the form for a free SEO audit of your website
+          </p>
+          <div>
+            <div className="mb-5">
+              <label className="label">
+                <span className="label-text">Name</span>
+              </label>
+              <input
+                type="text"
+                placeholder="Name"
+                className="input input-bordered w-full"
+              />
+              <label className="label">
+                <span className="label-text">Email</span>
+              </label>
+              <input
+                type="email"
+                placeholder="Email"
+                className="input input-bordered w-full"
+              />
+              <label className="label">
+                <span className="label-text">Company Name</span>
+              </label>
+              <input
+                type="text"
+                placeholder="Company Name"
+                className="input input-bordered w-full"
+              />
+              <label className="label">
+                <span className="label-text">Website URL</span>
+              </label>
+              <input
+                type="url"
+                placeholder="Website URL"
+                className="input input-bordered w-full"
+              />
+            </div>
+            <Button>Submit</Button>
+          </div>
+        </form>
+        <form method="dialog" className="modal-backdrop">
+          <button>close</button>
+        </form>
+      </dialog>
     </section>
   );
 };

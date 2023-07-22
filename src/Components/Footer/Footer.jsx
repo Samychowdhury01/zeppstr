@@ -40,6 +40,7 @@ const Footer = () => {
               <div>
               <h4 className="text-secondary text-lg font-medium mb-2">Per Click Management</h4>
               <p className="text-xs">PageTraffic is a premier Search Engine Marketing ( SEM).</p>
+              <li className="text-xs text-primary list-disc mt-4">15 April 2021</li>
               </div>
             </div>
             <div className="flex gap-5 mb-5">
@@ -47,8 +48,10 @@ const Footer = () => {
               <div>
               <h4 className="text-secondary text-lg font-medium mb-2">Per Click Management</h4>
               <p className="text-xs">PageTraffic is a premier Search Engine Marketing ( SEM).</p>
+              <li className="text-xs text-primary list-disc mt-4">15 April 2021</li>
               </div>
             </div>
+            
           </div>
         </div>
       </footer>
