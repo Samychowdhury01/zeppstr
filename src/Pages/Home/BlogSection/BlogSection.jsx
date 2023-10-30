@@ -22,18 +22,20 @@ const BlogSection = () => {
         </p>
       </div>
       <div className="flex flex-col md:flex-row gap-5">
-        <div className="card rounded-none md:w-4/5 bg-white shadow-xl relative">
-          <figure className="h-[300px]">
+        <div className="card rounded-none md:w-4/5 bg-white shadow-xl">
+         <div className="relative">
+         <figure className="h-[300px]">
             <img
               src={image}
               className="object-cover w-full h-full"
               alt="image"
             />
           </figure>
-          <div className="card-body">
-            <div className="bg-white text-black shadow-xl w-40 p-2 absolute top-[50%] md:top-[43%]">
+          <div className="bg-white text-black shadow-xl w-40 p-2 absolute -bottom-4 left-5">
             <h5 className="font-semibold">February 28, 2023</h5>
             </div>
+         </div>
+          <div className="card-body">
             <h2 className="card-title"> why is SEO is important for every business</h2>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
                 eveniet sint dicta totam. Quam velit asperiores ducimus quia

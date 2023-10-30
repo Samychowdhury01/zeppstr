@@ -35,7 +35,7 @@ const SeoAudit = () => {
             {...register("url", { required: true })}
           />
           {errors.url && (
-            <span className="text-red-500 absolute -bottom-8  left-5">this field is required</span>
+            <span className="text-red-500 absolute -bottom-8  left-5">This field is required</span>
           )}
         </div>
         <div className="relative">
@@ -46,7 +46,7 @@ const SeoAudit = () => {
             {...register("email", { required: true, pattern: /^\S+@\S+$/i })}
           />
           {errors.email && (
-            <span className="text-red-500 absolute -bottom-8  left-5">this field is required</span>
+            <span className="text-red-500 absolute -bottom-8  left-5">This field is required</span>
           )}
         </div>
           <input
